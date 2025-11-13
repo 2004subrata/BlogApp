@@ -207,3 +207,9 @@ nav button{
 */
 
 
+.post_thumbnail{
+    border-radius: var(--card-border-radius-5) 0;
+    border: 1rem solid var(--color-gray-900);
+    overflow: hidden;
+    margin-bottom: 1.6rem;
+}
