@@ -47,7 +47,7 @@ html, body {
     width: 100%;
     font-family: "Montserrat", sans-serif;
     line-height: 1.6;
-    color: var(--color-gray-900);
+    color: var(--color-gray-200);
     overflow-x: hidden;
     background: var(--color-bg);
     font-size: 0.9rem;
@@ -179,3 +179,31 @@ nav button{
 .nav_profile ul li:last-child a{
     background: var(--color-red);
 }
+
+
+/* 
+==================== CATEGORY BUTTON ====================
+*/
+
+
+.category_button{
+    background: var(--color-primary-light);
+    color: var(--color-primary);
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: var(--card-border-radius-2);
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.category_button:hover {
+    color: var(--color-white);
+}
+
+
+/* 
+==================== GENERAL POST ====================
+*/
+
+
