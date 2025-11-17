@@ -218,3 +218,23 @@ nav button{
     filter: saturate(0);
     transition: filter 500ms ease;
 }
+
+.post_author {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.2rem;
+}
+
+.post_author-avatar {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: var(--card-border-radius-3);
+    overflow: hidden;
+}
+
+
+/* 
+==================== FEATURED ====================
+*/
+
+
