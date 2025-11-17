@@ -238,3 +238,12 @@ nav button{
 */
 
 
+.featured {
+    margin-top: 8rem;
+}
+
+.featured_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4 rem;
+}
