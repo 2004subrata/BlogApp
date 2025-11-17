@@ -213,3 +213,8 @@ nav button{
     overflow: hidden;
     margin-bottom: 1.6rem;
 }
+
+.post:hover .post_thumbnail img {
+    filter: saturate(0);
+    transition: filter 500ms ease;
+}
