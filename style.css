@@ -247,3 +247,21 @@ nav button{
     grid-template-columns: 1fr 1fr;
     gap: 4 rem;
 }
+
+.featured .post_thumbnail {
+    height: fit-content;
+
+}
+
+
+/* 
+==================== posts ====================
+*/
+
+
+.posts_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem;
+    margin-bottom: 5rem;
+}
