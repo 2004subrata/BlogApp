@@ -423,13 +423,13 @@ footer ul a:hover {
         animation-delay: 200ms;
     }
     .nav_items li:nth-child(3) {
-        animation-delay: 400ms;
+        animation-delay: 300ms;
     }
     .nav_items li:nth-child(4) {
-        animation-delay: 600ms;
+        animation-delay: 400ms;
     }
     .nav_items li:nth-child(5) {
-        animation-delay: 800ms;
+        animation-delay: 500ms;
     }
 
     /* nav dropdown animation  */
@@ -462,4 +462,23 @@ footer ul a:hover {
         margin-left: 2rem;
         border: 0;
     }
+
+    .featured_container {
+        gap: 3rem;
+    }
+
+    .posts_container {
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+    }
+
+    .footer_container {
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+    }
 }
+
+
+/* 
+==================== MEDIA QUERIES (SMALL DEVICES) ====================
+*/
