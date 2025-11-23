@@ -351,3 +351,115 @@ footer ul a:hover {
     border-top: 2px solid var(--color-bg);
     margin-top: 4rem;
 }
+
+
+/* 
+==================== MEDIA QUERIES (MEDIUM DEVICES) ====================
+*/
+
+@media screen and (max-width:1024px) {
+    /* ==================== GENERAL ====================  */
+    .container {
+        width: var(--container-width-md);
+    }
+
+    h2{
+        font-size: 1.6rem;
+    }
+
+    h3{
+        font-size: 1.2rem;
+    }
+
+    h5{
+        font-size: 0.8rem;
+    }
+
+    /* ==================== NAV ====================  */
+
+    nav button {
+        display: inline-block;
+        font-size: 1.5rem;
+        background: transparent;
+        color: var(--color-white);
+        cursor: pointer;
+    }
+
+    nav button#close_nav-btn {
+        display: none;
+    }
+
+    .nav_container {
+        position: relative;
+    }
+
+    .nav_items {
+        position: absolute;
+        flex-direction: column;
+        top: 100%;
+        right: 0;
+        width: 12rem;
+        /* display: flex; */
+        align-items: flex-start;
+        justify-content: center;
+        gap: 0;
+        display: none;
+    }
+
+    .nav_items li {
+        width: 100%;
+        height: 4.5rem;
+        display: flex;
+        align-items: center;
+        box-shadow: -2rem 3rem 7rem rgba(0, 0, 0, 0.7);
+        background: var(--color-gray-900);
+        border-top: 1px solid var(--color-bg);
+        animation: animateDropdown 1s 0s ease forwards;
+        opacity: 0;
+        transform-origin: top;
+    }
+
+    .nav_items li:nth-child(2) {
+        animation-delay: 200ms;
+    }
+    .nav_items li:nth-child(3) {
+        animation-delay: 400ms;
+    }
+    .nav_items li:nth-child(4) {
+        animation-delay: 600ms;
+    }
+    .nav_items li:nth-child(5) {
+        animation-delay: 800ms;
+    }
+
+    /* nav dropdown animation  */
+    @keyframes animateDropdown {
+        0% {
+            transform: rotateX(90deg);
+        }
+        100% {
+            transform: rotateX(0deg);
+            opacity: 1;
+        }
+    }
+
+    .nav_items li a {
+        border-radius: 0;
+        width: 100% ;
+        height: 100%;
+        background: var(--color-gray-900);
+        padding: 0 2rem;
+        display: flex;
+        align-items: center;
+    }
+    
+    .nav_profile ul {
+        top: 100%;
+        width: 100%;
+    }
+
+    .nav_profile .avatar {
+        margin-left: 2rem;
+        border: 0;
+    }
+}
