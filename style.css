@@ -81,7 +81,7 @@ h2{
 
 h3{
     font-size: 1.1rem;
-    image-rendering: 0.8rem 0 0.5rem;
+    margin: 0.8rem 0 0.5rem;
 }
 
 h4{
@@ -245,7 +245,7 @@ nav button{
 .featured_container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 4 rem;
+    gap: 4rem;
 }
 
 .featured .post_thumbnail {
@@ -283,4 +283,71 @@ nav button{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
+}
+
+
+/* 
+==================== Footer ====================
+*/
+
+
+footer{
+    background: var(--color-gray-900);
+    padding: 5rem 0 0;
+    box-shadow: inset 0 1.5rem 1.5rem rgba(0, 0, 0, 0.2);
+}
+
+.footer_socials {
+    margin-inline: auto;
+    width: fit-content;
+    margin-bottom: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.footer_socials a {
+    background: var(--color-bg);
+    border-radius: 50%;
+    width: 2.3rem;
+    height: 2.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer_socials a:hover {
+    background: var(--color-white);
+    color: var(--color-bg);
+}
+
+.footer_container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+footer h4 {
+    color: var(--color-white);
+    margin-bottom: 0.6rem;
+}
+
+footer ul li {
+    padding: 0.4rem 0;
+}
+
+footer ul a{
+    opacity: 0.75;
+}
+
+footer ul a:hover {
+    letter-spacing: 0.1rem;
+    opacity: 1;
+}
+
+.footer_copyright {
+    text-align: center;
+    padding: 1.5rem 0;
+    border-top: 2px solid var(--color-bg);
+    margin-top: 4rem;
 }
