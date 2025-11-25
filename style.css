@@ -489,7 +489,12 @@ form {
 .form_control {
     display: flex;
     flex-direction: column;
-    gap: 0.4rem;
+    gap: 0.6rem;
+}
+
+.form_control.inline {
+    flex-direction: row;
+    align-items: center;
 }
 
 input, textarea, select {
