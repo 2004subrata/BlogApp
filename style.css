@@ -6,7 +6,7 @@
     --color-red: #da0f3f;
     --color-red-light: hsl(346, 87%, 46%, 15%);
     --color-green: #00c476;
-    --color-green-light: hsl(156, 100%, 38%, 15%);
+    --color-green-light: hsla(156, 100%, 38%, 15%);
     --color-gray-900: #1e1e66;
     --color-gray-700: #2d2b7c;
     --color-gray-300: rgba(242, 242, 254, 0.3);
