@@ -437,7 +437,16 @@ footer ul a:hover {
     background: var(--color-gray-900);
     display: grid;
     place-items: center;
-    
+}
+
+
+/* ==================== EMPTY PAGE ====================  */
+
+
+.empty_page {
+    height: 70vh;
+    display: grid;
+    place-content: center;
 }
 
 
