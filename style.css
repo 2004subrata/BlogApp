@@ -405,6 +405,29 @@ footer ul a:hover {
 }
 
 
+/* ==================== SINGLE POST ====================  */
+
+
+.singlepost {
+    margin: 6rem 0 2rem;
+}
+
+.singlepost_container {
+    width: var(--form-width);
+    background: var(--color-gray-900);
+    padding: 1rem 2rem 3rem;
+}
+
+.singlepost .singlepost_thumbnail {
+    margin: 1.5rem 0 1rem;
+}
+
+.singlepost_container p {
+    margin-top: 1rem;
+    line-height: 1.7;
+}
+
+
 /* 
 ==================== MEDIA QUERIES (MEDIUM DEVICES) ====================
 */
@@ -535,6 +558,9 @@ footer ul a:hover {
     .search_bar-container {
         width: 60%;
     }
+
+
+
 }
 
 
@@ -579,5 +605,12 @@ footer ul a:hover {
 
     .search_bar-container {
         width: var(--container-width-md);
+    }
+
+
+    /* ==================== SINGLE POST ====================  */
+    .singlepost_container {
+        background-color: transparent;
+        padding: 0;
     }
 }
