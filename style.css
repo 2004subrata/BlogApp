@@ -353,6 +353,58 @@ footer ul a:hover {
 }
 
 
+/* ==================== SEARCH ====================  */
+
+
+.search_bar {
+    margin-top: 7rem;
+}
+
+.search_bar-container {
+    position: relative;
+    width: 30rem;
+    background: var(--color-gray-900);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    padding: 0.6rem 1rem;
+    border-radius: var(--card-border-radius-2);
+    color: var(--color-gray-300);
+}
+
+.search_bar-container > div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.search_bar input {
+    background: transparent;
+    margin-left: 0.7rem;
+    padding: 0.5rem 0;
+    width: 100%;
+}
+
+.search_bar input::placeholder {
+    color: var(--color-gray-300);
+}
+
+
+/* ==================== BUTTON ====================  */
+
+
+.btn {
+    display: inline-block;
+    width: fit-content;
+    padding: 0.6rem 1.2rem;
+    background: var(--color-primary);
+    border-radius: var(--card-border-radius-2);
+    transition: var(--transition);
+    color: var(--color-white);
+}
+
+
 /* 
 ==================== MEDIA QUERIES (MEDIUM DEVICES) ====================
 */
@@ -476,6 +528,13 @@ footer ul a:hover {
         grid-template-columns: 1fr 1fr;
         gap: 3rem;
     }
+
+
+    /* ==================== BLOG ====================  */
+
+    .search_bar-container {
+        width: 60%;
+    }
 }
 
 
@@ -513,5 +572,12 @@ footer ul a:hover {
         grid-template-columns: 1fr;
         text-align: center;
         gap: 2rem;
+    }
+
+
+    /* ==================== BLOG ====================  */
+
+    .search_bar-container {
+        width: var(--container-width-md);
     }
 }
