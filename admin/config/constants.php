@@ -1,4 +1,5 @@
 <?php
+session_start();
 define('ROOT_URl', 'http://localhost/CreativeNova/');
 define('DB_HOST', 'localhost');
 define('DB_USER', 'CreativeNova');
