@@ -11,11 +11,27 @@ $users = mysqli_query($connection, $query);
 
 
 <section class="dashboard">
-    <?php if(isset($_SESSION['add-user-success'])) : ?>
+    <?php if(isset($_SESSION['add-user-success'])) : // shows if add user was successful ?>
              <div class="alert_message success container">
                 <p>
                     <?= $_SESSION['add-user-success']; 
                     unset($_SESSION['add-user-success']);
+                    ?>
+                </p>
+            </div>
+    <?php elseif(isset($_SESSION['edit-user-success'])) : // shows if edit user was successful ?>
+             <div class="alert_message success container">
+                <p>
+                    <?= $_SESSION['edit-user-success']; 
+                    unset($_SESSION['edit-user-success']);
+                    ?>
+                </p>
+            </div>
+    <?php elseif(isset($_SESSION['edit-user-success'])) : // shows if edit user was NOT successful ?>
+             <div class="alert_message error container">
+                <p>
+                    <?= $_SESSION['edit-user']; 
+                    unset($_SESSION['edit-user']);
                     ?>
                 </p>
             </div>
