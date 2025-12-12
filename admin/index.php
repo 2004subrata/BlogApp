@@ -20,6 +20,7 @@ require 'partials/header.php';
                         <h5>Manage Posts</h5>
                     </a>
                 </li>
+                <?php if(isset($_SESSION['user_is_admin'])) : ?>
                 <li>
                     <a href="add-user.php"><i class="fa-solid fa-user-plus"></i>
                         <h5>Add User</h5>
@@ -40,10 +41,11 @@ require 'partials/header.php';
                         <h5>Manage Categories</h5>
                     </a>
                 </li>
+                <?php endif ?>
             </ul>
         </aside>
         <main>
-            <h2>Manage Users</h2>
+            <h2>Manage Posts</h2>
             <table>
                 <thead>
                     <th>Title</th>
