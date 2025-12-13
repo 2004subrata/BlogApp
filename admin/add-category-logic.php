@@ -13,7 +13,7 @@ if(isset($_POST['submit'])) {
     }
 
     // redicect back to add category page with form data if there was invalid input
-    if(isset($_SESSION['add-category-data'])) {
+    if(isset($_SESSION['add-category'])) {
         $_SESSION['add-category-data'] = $_POST;
         header('location: ' . ROOT_URl . 'admin/add-category.php');
         die();
