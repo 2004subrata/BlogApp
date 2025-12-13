@@ -9,10 +9,10 @@ require 'partials/header.php';
         <div class="alert_message error">
             <p>This is an error message</p>
         </div>
-        <form action="">
-            <input type="text" placeholder="Title">
-            <textarea rows="4" placeholder="Description"></textarea>
-            <button type="submit" class="btn">Add Category</button>
+        <form action="<?= ROOT_URl ?>admin/add-category-logic.php" method="post">
+            <input type="text" name="title" placeholder="Title">
+            <textarea rows="4" name="description" placeholder="Description"></textarea>
+            <button type="submit" name="submit" class="btn">Add Category</button>
         </form>
     </div>
 </section>
