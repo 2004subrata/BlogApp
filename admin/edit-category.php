@@ -21,6 +21,7 @@ if(isset($_GET['id'])) {
     <div class="container form_section-container">
         <h2>Edit Category</h2>
         <form action="<?= ROOT_URl ?>admin/edit-category-logic.php" method="post">
+            <input type="hidden" name="id" value="<?= $category['id'] ?>">
             <input type="text" name="title" value="<?= $category['title'] ?>" placeholder="Title">
             <textarea rows="4" name="description" placeholder="Description"><?= $category['description'] ?></textarea>
             <button type="submit" name="submit" class="btn">Update Category</button>
