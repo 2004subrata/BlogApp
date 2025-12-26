@@ -35,7 +35,7 @@ if(isset($_POST['submit'])) {
         $extension = end($extension);
         if(in_array($extension, $allowed_files)) {
             // make sure image not too big (2mb+)
-            if($thumbnail['size'] < 2_000_000) {
+            if($thumbnail['size'] < 3_000_000) {
                 // upload thumbnail
                 move_uploaded_file($thumbnail_temp_name, $thumbnail_destination_path);
             } else{
