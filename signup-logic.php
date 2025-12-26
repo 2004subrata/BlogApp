@@ -56,8 +56,8 @@ if(isset($_POST['submit'])) {
                 $extention = explode('.', $avatar_name);
                 $extention = end($extention);
                 if(in_array($extention, $allowed_files)){
-                    // make sure image is not too large (1mb+)
-                    if($avatar['size'] < 100000) {
+                    // make sure image is not too large (2mb+)
+                    if($avatar['size'] < 2000000) {
                         // upload avatar
                         move_uploaded_file($avatar_tmp_name, $avatar_destination_path);
 
