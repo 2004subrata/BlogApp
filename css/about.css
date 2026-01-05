@@ -37,7 +37,7 @@
 /* Header */
 .main-header {
     text-align: center;
-    padding: 100px 0;
+    padding : 100px 0;
     background: var(--color-bg);
 }
 
@@ -73,7 +73,7 @@
 
 /* Specific Section Styles */
 .mission {
-    background-color: var(--color-primary); /* Blue background */
+    background-color: var(--color-primary-light); /* Blue background */
     color: var(--color-white);
 }
 
@@ -85,7 +85,7 @@
 }
 
 .values {
-    background: var(--color-primary);
+    background: var(--color-primary-light);
     color: var(--color-white);
 }
 
