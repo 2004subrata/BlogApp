@@ -21,6 +21,13 @@ if(isset($_SESSION['user-id'])) {
     <!-- custom css  -->
     <link rel="stylesheet" href="<?= ROOT_URl ?>css/style.css">
 
+    <?php
+    // Load extra CSS if defined
+    if (!empty($page_css)) {
+        echo '<link rel="stylesheet" href="' . $page_css . '">';
+    }
+    ?>
+
     <!-- ICONSCOUT CDN  -->
      <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.2.0/css/line.css">
 
