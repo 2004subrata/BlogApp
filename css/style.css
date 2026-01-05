@@ -468,7 +468,7 @@ footer ul a:hover {
 
 
 .empty_page {
-    height: 70vh;
+    height: fit-content;
     display: grid;
     place-content: center;
 }
